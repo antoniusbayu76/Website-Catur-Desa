@@ -1,15 +1,18 @@
-import { Link } from 'react-router-dom'
+import { useRef } from "react";
+import Menu from "../components/Menu";
+import Firstsec from "../components/Firstsec";
+import Secondsec from "../components/Secondsec";
+import Thirdsec from "../components/Thirdsec";
 
 export default function Home() {
+  const thirdRef = useRef();
+
   return (
-    <div className="p-4 text-center">
-      <h1 className="text-3xl font-bold mb-6">Profil Desa</h1>
-      <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
-        <Link to="/munduk" className="bg-blue-200 p-4 rounded shadow hover:bg-blue-300">Munduk</Link>
-        <Link to="/gobleg" className="bg-green-200 p-4 rounded shadow hover:bg-green-300">Gobleg</Link>
-        <Link to="/gesing" className="bg-yellow-200 p-4 rounded shadow hover:bg-yellow-300">Gesing</Link>
-        <Link to="/umajero" className="bg-red-200 p-4 rounded shadow hover:bg-red-300">Umajero</Link>
-      </div>
+    <div className="relative w-full min-h-screen overflow-x-hidden">
+      <Menu onSelectMenu={(tabKey) => thirdRef.current?.goToTab(tabKey)} />
+      <Firstsec />
+      <Secondsec />
+      <Thirdsec ref={thirdRef} />
     </div>
-  )
+  );
 }
