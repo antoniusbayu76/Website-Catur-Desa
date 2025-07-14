@@ -22,7 +22,7 @@ export default function Firstsec() {
             <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold">
               Catur Desa
             </h1>
-            <p className="text-sm sm:text-base md:text-xl lg:text-2xl">
+            <p className="text-sm italic sm:text-base md:text-xl lg:text-2xl">
               Masyarakat Adat Dalem Tamblingan
             </p>
           </div>

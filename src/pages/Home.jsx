@@ -3,6 +3,7 @@ import Menu from "../components/Menu";
 import Firstsec from "../components/Firstsec";
 import Secondsec from "../components/Secondsec";
 import Thirdsec from "../components/Thirdsec";
+import Forthsec from "../components/Forthsec"
 
 export default function Home() {
   const thirdRef = useRef();
@@ -13,6 +14,7 @@ export default function Home() {
       <Firstsec />
       <Secondsec />
       <Thirdsec ref={thirdRef} />
+      <Forthsec />
     </div>
   );
 }

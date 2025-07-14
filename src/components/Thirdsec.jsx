@@ -42,7 +42,7 @@ const Thirdsec = forwardRef((props, ref) => {
       className="relative w-full min-h-screen text-white px-4 sm:px-6 py-12 bg-[#151515] overflow-hidden"
     >
       {/* Radial Gradient Background */}
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle,rgba(255,194,90,0.40)_30%,#151515_60%)]" />
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse,rgba(255,194,90,0.20)_30%,#151515_60%)]" />
 
       {/* Tab Menu - Centered in desktop, scrollable in mobile */}
       <div className="relative z-10">

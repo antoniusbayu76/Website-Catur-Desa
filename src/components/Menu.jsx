@@ -21,7 +21,7 @@ export default function Sidebar({ onSelectMenu }) {
       {/* Hamburger Icon */}
       <button
         onClick={() => setIsOpen(true)}
-        className="absolute top-4 left-4 z-40 text-white text-3xl hover:scale-110 transition"
+        className="absolute top-4 right-4 z-40 text-white text-3xl hover:scale-110 transition"
       >
         ☰
       </button>
@@ -36,8 +36,8 @@ export default function Sidebar({ onSelectMenu }) {
 
       {/* Sidebar Panel */}
       <div
-        className={`fixed top-0 left-0 h-full w-72 bg-[#151515] text-white shadow-2xl z-40 transform transition-transform duration-300 ease-in-out
-        ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
+        className={`fixed top-0 right-0 h-full w-72 bg-[#151515] text-white shadow-2xl z-40 transform transition-transform duration-300 ease-in-out
+        ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         {/* Header */}
         <div className="flex justify-between items-center px-5 py-4 border-b border-gray-700">
