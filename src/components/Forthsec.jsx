@@ -1,46 +1,59 @@
 import { useNavigate } from "react-router-dom";
-import bg from "../assets/toy.png";
+import background from "../assets/forthsecbg.png";
+import munduk from "../assets/munduk.png";
+import gobleg from "../assets/gobleg.png";
+import gesing from "../assets/gesing.png";
+import umajero from "../assets/umajero.png";
 
 const desaList = [
-  { name: "Munduk", desc: "Desa Munduk memiliki kawasan adat lokal yang sangat indah...", link: "/munduk" },
-  { name: "Gobleg", desc: "Desa Gobleg memiliki kawasan adat lokal yang sangat indah...", link: "/gobleg" },
-  { name: "Gesing", desc: "Desa Gesing memiliki kawasan adat lokal yang sangat indah...", link: "/gesing" },
-  { name: "Umajero", desc: "Desa Umajero memiliki kawasan adat lokal yang sangat indah...", link: "/umajero" },
+  { name: "Munduk", image: munduk, link: "/munduk" },
+  { name: "Gobleg", image: gobleg, link: "/gobleg" },
+  { name: "Gesing", image: gesing, link: "/gesing" },
+  { name: "Umajero", image: umajero, link: "/umajero" },
 ];
 
 export default function Fourthsec() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative w-full min-h-screen px-6 py-16 text-white bg-[#151515]">
-      {/* Background */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#151515] via-[#FFC25A1A] to-[#151515]" />
+    <section
+      className="relative w-full min-h-screen px-4 sm:px-6 py-12 sm:py-16 text-black bg-cover bg-center"
+      style={{ backgroundImage: `url(${background})` }}
+    >
+      {/* Header */}
+      <div className="relative z-10 max-w-5xl mx-auto md:mx-20 text-left mb-10 px-2 sm:px-6">
+        <p className="text-xs sm:text-sm uppercase tracking-wide text-black/80 mb-2">
+          Jelajahi Lebih Dalam Tentang Catur Desa
+        </p>
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug">
+          Empat Desa, Satu Ikatan Sakral Menjaga Keseimbangan <br className="hidden sm:block" />
+          Alam & Spiritualitas Tamblingan.
+        </h2>
+      </div>
 
-      {/* Card List */}
-      <div className="relative md:pt-20 z-10 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+      {/* Card Grid */}
+      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 px-2 sm:px-0">
         {desaList.map((desa, index) => (
           <div
             key={index}
             onClick={() => navigate(desa.link)}
-            className="cursor-pointer relative rounded-xl overflow-hidden h-40 md:h-44 p-4 bg-cover bg-center shadow-md transition hover:scale-[1.02] hover:ring-2 hover:ring-[#FFC25A]/50"
+            className="cursor-pointer relative rounded-xl overflow-hidden h-40 sm:h-44 md:h-48 bg-no-repeat bg-center transition hover:scale-[1.02] hover:ring-2 hover:ring-black/20"
             style={{
-              backgroundImage: `url(${bg})`,
-              backgroundSize: "300%",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
+              backgroundSize: window.innerWidth < 640 ? "150%" : "110%",
+              backgroundImage: `url(${desa.image})`,
             }}
           >
-            <div className="absolute inset-0 bg-[#151515]/60" />
-            <div className="relative z-10 h-full flex flex-col justify-end p-4 text-white text-left">
-              <h3 className="text-2xl md:text-3xl font-bold">{desa.name}</h3>
-              <p className="text-sm italic opacity-80">{desa.desc}</p>
+            <div className="relative z-10 h-full flex items-end p-3 sm:p-4 bg-black/40">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">
+                {desa.name}
+              </h3>
             </div>
           </div>
         ))}
       </div>
 
       {/* Footer */}
-      <footer className="relative z-10 mt-20 text-center text-xs text-white/50">
+      <footer className="relative z-10 mt-12 text-center text-xs text-black/80 px-2">
         Developed by <br />
         <span className="font-medium tracking-wide">KKN MEKAR BANJAR UGM 2025</span>
       </footer>
