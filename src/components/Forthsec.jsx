@@ -35,20 +35,26 @@ export default function Fourthsec() {
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 px-2 sm:px-0">
         {desaList.map((desa, index) => (
           <div
-            key={index}
-            onClick={() => navigate(desa.link)}
-            className="cursor-pointer relative rounded-xl overflow-hidden h-40 sm:h-44 md:h-48 bg-no-repeat bg-center transition hover:scale-[1.02] hover:ring-2 hover:ring-black/20"
-            style={{
-              backgroundSize: window.innerWidth < 640 ? "150%" : "110%",
-              backgroundImage: `url(${desa.image})`,
-            }}
-          >
-            <div className="relative z-10 h-full flex items-end p-3 sm:p-4 bg-black/40">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">
-                {desa.name}
-              </h3>
-            </div>
+          key={index}
+          onClick={() => navigate(desa.link)}
+          className="cursor-pointer relative rounded-xl overflow-hidden h-40 sm:h-44 md:h-48 group"
+        >
+          {/* Zoomable background layer */}
+          <div
+            className="absolute inset-0 bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110"
+            style={{ backgroundSize: window.innerWidth < 640 ? "150%" : "110%", backgroundImage: `url(${desa.image})` }}
+          />
+
+          {/* Overlay for dark effect */}
+          <div className="absolute inset-0 bg-black/40 z-10" />
+
+          {/* Text content */}
+          <div className="relative z-20 h-full flex items-end p-3 sm:p-4">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">
+              {desa.name}
+            </h3>
           </div>
+        </div>
         ))}
       </div>
 
