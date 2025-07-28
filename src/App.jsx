@@ -6,6 +6,12 @@ import Munduk from './pages/Munduk'
 import Gobleg from './pages/Gobleg'
 import Gesing from './pages/Gesing'
 import Umajero from './pages/Umajero'
+import History from './pages/History'
+import AturanAdat from "./pages/AturanAdat"
+import NyegaraGunung from "./pages/NyegaraGunung";
+import WilayahAdat from './pages/WilayahAdat';
+import MenjalaIngatan from "./pages/Menjala";
+
 
 function App() {
   return (
@@ -16,6 +22,11 @@ function App() {
         <Route path="/gobleg" element={<Gobleg />} />
         <Route path="/gesing" element={<Gesing />} />
         <Route path="/umajero" element={<Umajero />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/aturan-adat" element={<AturanAdat />} />
+        <Route path="/wilayah-adat" element={<WilayahAdat />} />
+        <Route path="/nyegara-gunung" element={<NyegaraGunung />} />
+        <Route path="/menjala" element={<MenjalaIngatan />} />
       </Routes>
     </Router>
   )

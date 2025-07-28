@@ -3,12 +3,16 @@ import background from "../assets/socialbg.png";
 import card1 from "../assets/socialart1.png";
 import card2 from "../assets/socialart2.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 
 export default function SocialContent() {
+  const navigate = useNavigate();
   const articles = [
     {
-      title: "Mengenal Dualitas Kepemimpinan di Tamblingan Bali",
+      title: "Pegangan Hukum Adat Sejak Seribu Tahun Lalu",
       image: card1,
+      link: "/aturan-adat", // ✅ tambahkan properti link
     },
     {
       title: "Mengenal Dualitas Kepemimpinan di Tamblingan Bali",
@@ -97,6 +101,7 @@ export default function SocialContent() {
               <div
                 key={idx}
                 className="w-[60%] min-w-[60%] md:h-[28rem] h-[24rem] rounded-2xl bg-no-repeat bg-center relative shrink-0"
+                onClick={() => item.link && navigate(item.link)} // ✅ tambahkan navigasi ke halaman
                 style={{ backgroundSize: window.innerWidth < 640 ? "150%" : "110%", backgroundImage: `url(${item.image})` }}
               >
                 <div className="absolute inset-0 bg-black/40 rounded-2xl" />

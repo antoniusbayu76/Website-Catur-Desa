@@ -1,12 +1,13 @@
 import { useState, forwardRef, useImperativeHandle, useRef } from "react";
-import { FaLeaf, FaUsers, FaImage } from "react-icons/fa";
+import { FaLeaf, FaUsers, FaImage, FaGlobe, FaGlobeAsia } from "react-icons/fa";
 import { GiTempleDoor } from "react-icons/gi";
 import CultureContent from "../components/Culture";
 import SocialContent from "../components/Social";
+import EnvironmentContent from "../components/Environment";
 
 const menu = [
   { key: "culture", label: "Culture", icon: <GiTempleDoor /> },
-  { key: "environment", label: "Environment", icon: <FaLeaf /> },
+  { key: "environment", label: "Environment", icon: <FaGlobeAsia /> },
   { key: "social", label: "Social Infrastructure", icon: <FaUsers /> },
   { key: "glimpse", label: "Glimpse of MADT", icon: <FaImage /> },
 ];
@@ -41,7 +42,7 @@ const Thirdsec = forwardRef((props, ref) => {
       case "culture":
         return <CultureContent />;
       case "environment":
-        return <div>🌿 Konten Lingkungan & Konservasi</div>;
+        return <EnvironmentContent />;
       case "social":
         return <SocialContent />;
       case "glimpse":
