@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -11,7 +12,7 @@ import AturanAdat from "./pages/AturanAdat"
 import NyegaraGunung from "./pages/NyegaraGunung";
 import WilayahAdat from './pages/WilayahAdat';
 import MenjalaIngatan from "./pages/Menjala";
-
+import CultureContent from './components/Culture';
 
 function App() {
   return (
@@ -27,10 +28,11 @@ function App() {
         <Route path="/wilayah-adat" element={<WilayahAdat />} />
         <Route path="/nyegara-gunung" element={<NyegaraGunung />} />
         <Route path="/menjala" element={<MenjalaIngatan />} />
+        {/* ✅ Route tambahan */}
+        <Route path="/culture" element={<CultureContent />} />
       </Routes>
     </Router>
-  )
+  );
 }
 
-export default App
-
+export default App;

@@ -112,8 +112,7 @@ export default function History() {
         </div>
 
         </div>
-        {/* Space ksongg*/}
-        <div className="h-20" />
     </div>
   );
 }
+

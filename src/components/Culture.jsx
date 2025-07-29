@@ -58,7 +58,7 @@ export default function CultureContent() {
             fade ? "opacity-100" : "opacity-0"
           }`}
           style={{ backgroundImage: `url(${sliderItems[activeIndex].image})` }}
-        />
+        ></div>
         <div className="absolute inset-0 bg-black/40 z-0" />
         <div className="absolute inset-0 z-0 pointer-events-none">
           <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#151515] to-transparent" />
@@ -111,7 +111,6 @@ export default function CultureContent() {
         </div>
       </div>
 
-      {/* Info teks */}
       <div className="px-4 md:px-20 text-left">
         <p className="text-sm italic md:text-base mb-1 text-white">
           CERITA DARI TAMBLINGAN

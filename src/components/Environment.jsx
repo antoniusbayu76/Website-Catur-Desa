@@ -66,6 +66,7 @@ export default function Environment() {
             >
               🗺️ <span>Peta</span>
             </button>
+
             <button
               onClick={() => handleTabSwitch("artikel")}
               className={`relative z-10 w-1/2 px-2 sm:px-4 py-2 flex items-center justify-center gap-2 rounded-lg font-semibold text-xs sm:text-sm transition-all duration-300 ${
@@ -81,6 +82,7 @@ export default function Environment() {
         <div className={`transition-opacity duration-300 ${fade ? "opacity-100" : "opacity-0"}`}>
           {activeTab === "peta" && (
             <div className="space-y-4 sm:space-y-6">
+
               <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between bg-white/10 text-white px-4 py-3 rounded-md text-sm shadow-sm font-semibold tracking-wide">
                 <div>Jenis Peta</div>
                 <div className="flex items-center gap-2">
@@ -102,6 +104,7 @@ export default function Environment() {
                   </div>
                 </div>
               </div>
+
               <div className="bg-white rounded-xl overflow-hidden border border-gray-300 shadow-lg transition duration-300">
                 <div className="bg-[#2e2e2e] text-white px-4 py-2 flex justify-between text-xs sm:text-sm font-medium">
                   <span>{selectedMap}</span>
@@ -115,7 +118,6 @@ export default function Environment() {
               </div>
             </div>
           )}
-
           {activeTab === "artikel" && (
             <div className="mt-6 sm:mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div
