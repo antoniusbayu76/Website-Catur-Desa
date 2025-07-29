@@ -6,8 +6,8 @@ import gesing from "../assets/gesing.png";
 import umajero from "../assets/umajero.png";
 
 const desaList = [
-  { name: "Munduk", image: munduk, link: "/munduk" },
   { name: "Gobleg", image: gobleg, link: "/gobleg" },
+  { name: "Munduk", image: munduk, link: "/munduk" },
   { name: "Gesing", image: gesing, link: "/gesing" },
   { name: "Umajero", image: umajero, link: "/umajero" },
 ];
