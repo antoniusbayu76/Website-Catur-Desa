@@ -64,5 +64,5 @@ export default function Fourthsec() {
         <span className="font-medium tracking-wide">KKN MEKAR BANJAR UGM 2025</span>
       </footer>
     </section>
-  );
+  );
 }

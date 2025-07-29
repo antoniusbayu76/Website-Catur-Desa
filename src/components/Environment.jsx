@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import background from "../assets/envibg.png";
 import petadummy from "../assets/petadummy.png";
 import enviart1 from "../assets/enviart1.png";
@@ -22,6 +23,7 @@ const mapImages = {
 const mapOptions = Object.keys(mapImages);
 
 export default function Environment() {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("peta");
   const [selectedMap, setSelectedMap] = useState(mapOptions[0]);
   const [fade, setFade] = useState(true);
@@ -51,14 +53,11 @@ export default function Environment() {
         {/* Tab Header */}
         <div className="relative w-full sm:w-fit mx-auto mb-4">
           <div className="bg-[#2b2b2b] rounded-xl p-1 flex relative w-full sm:w-[300px]">
-            {/* Sliding background */}
             <div
               className={`absolute top-1 bottom-1 w-1/2 rounded-lg bg-[#FFC25A]/60 transition-all duration-300 ${
                 activeTab === "peta" ? "left-1" : "left-1/2"
               }`}
             />
-
-            {/* Peta Button */}
             <button
               onClick={() => handleTabSwitch("peta")}
               className={`relative z-10 w-1/2 px-2 sm:px-4 py-2 flex items-center justify-center gap-2 rounded-lg font-semibold text-xs sm:text-sm transition-all duration-300 ${
@@ -68,7 +67,6 @@ export default function Environment() {
               🗺️ <span>Peta</span>
             </button>
 
-            {/* Artikel Button */}
             <button
               onClick={() => handleTabSwitch("artikel")}
               className={`relative z-10 w-1/2 px-2 sm:px-4 py-2 flex items-center justify-center gap-2 rounded-lg font-semibold text-xs sm:text-sm transition-all duration-300 ${
@@ -84,7 +82,7 @@ export default function Environment() {
         <div className={`transition-opacity duration-300 ${fade ? "opacity-100" : "opacity-0"}`}>
           {activeTab === "peta" && (
             <div className="space-y-4 sm:space-y-6">
-              {/* Map Selector */}
+
               <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between bg-white/10 text-white px-4 py-3 rounded-md text-sm shadow-sm font-semibold tracking-wide">
                 <div>Jenis Peta</div>
                 <div className="flex items-center gap-2">
@@ -107,7 +105,6 @@ export default function Environment() {
                 </div>
               </div>
 
-              {/* Map Display */}
               <div className="bg-white rounded-xl overflow-hidden border border-gray-300 shadow-lg transition duration-300">
                 <div className="bg-[#2e2e2e] text-white px-4 py-2 flex justify-between text-xs sm:text-sm font-medium">
                   <span>{selectedMap}</span>
@@ -121,75 +118,70 @@ export default function Environment() {
               </div>
             </div>
           )}
-
-        {activeTab === "artikel" && (
-        <div className="mt-6 sm:mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {/* Main Article Card */}
-            <div className="sm:col-span-2 relative rounded-xl overflow-hidden shadow-md group">
-            <img
-                src={enviart1}
-                alt="Lingkungan Sebagai Sumber Kehidupan"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 flex flex-col justify-end">
-                <h3 className="text-xl sm:text-2xl font-bold mb-1">Lingkungan Sebagai Sumber Kehidupan</h3>
-                <p className="text-sm sm:text-base mb-2 text-white/90">
-                Di tengah kabut danau yang sunyi, hidup aturan tak tertulis yang mengikat manusia, alam, dan leluhur dalam satu harmoni.
-                </p>
-                <span className="text-xs sm:text-sm text-white/70">Written By: ABC (17/07/2025)</span>
-            </div>
-            </div>
-
-            {/* Side Article Cards */}
-            <div className="flex flex-col gap-4">
-            {/* Card 2 */}
-            <div className="relative rounded-xl overflow-hidden shadow-md group h-[31%] flex-1">
+          {activeTab === "artikel" && (
+            <div className="mt-6 sm:mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div
+                className="sm:col-span-2 relative rounded-xl overflow-hidden shadow-md group cursor-pointer"
+                onClick={() => navigate("/wilayah-adat")}
+              >
                 <img
-                src={enviart2}
-                alt="Daftar Tanaman Obat"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  src={enviart1}
+                  alt="Wilayah Adat Dalem Tamblingan"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-3 flex flex-col justify-end">
-                <h4 className="text-base sm:text-lg font-semibold leading-tight">
-                    Daftar Tanaman Obat <br className="sm:hidden" /> Alas Mertajati
-                </h4>
-                <span className="text-xs text-white/70 mt-1">Written By: ABC (17/07/2025)</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 flex flex-col justify-end">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-1">
+                    Wilayah Adat Dalem Tamblingan
+                  </h3>
+                  <p className="text-sm sm:text-base mb-2 text-white/90">
+                    Penelusuran sejarah, batas spasial, dan fungsi wilayah Adat Dalem Tamblingan sejak kuna hingga sekarang.
+                  </p>
+                  <span className="text-xs sm:text-sm text-white/70">Written By: KKN Mekar Banjar (27/07/2025)</span>
                 </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="relative rounded-xl overflow-hidden shadow-md group h-[31%] flex-1">
-                <img
-                src={enviart3}
-                alt="Kekayaan Hayati Lokal"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-3 flex flex-col justify-end">
-                <h4 className="text-base sm:text-lg font-semibold leading-tight">
-                    Kekayaan Hayati Lokal
-                </h4>
-                <span className="text-xs text-white/70 mt-1">Written By: ABC (17/07/2025)</span>
+              </div>
+              <div className="flex flex-col gap-4">
+                <div className="relative rounded-xl overflow-hidden shadow-md group h-[31%] flex-1">
+                  <img
+                    src={enviart2}
+                    alt="Daftar Tanaman Obat"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-3 flex flex-col justify-end">
+                    <h4 className="text-base sm:text-lg font-semibold leading-tight">
+                      Daftar Tanaman Obat <br className="sm:hidden" /> Alas Mertajati
+                    </h4>
+                    <span className="text-xs text-white/70 mt-1">Written By: ABC (17/07/2025)</span>
+                  </div>
                 </div>
-            </div>
-
-            {/* Card 4 */}
-            <div className="relative rounded-xl overflow-hidden shadow-md group h-[31%] flex-1">
-                <img
-                src={enviart4}
-                alt="Artikel Tambahan"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-3 flex flex-col justify-end">
-                <h4 className="text-base sm:text-lg font-semibold leading-tight">
-                    Artikel Tambahan
-                </h4>
-                <span className="text-xs text-white/70 mt-1">Written By: ABC (17/07/2025)</span>
+                <div className="relative rounded-xl overflow-hidden shadow-md group h-[31%] flex-1">
+                  <img
+                    src={enviart3}
+                    alt="Kekayaan Hayati Lokal"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-3 flex flex-col justify-end">
+                    <h4 className="text-base sm:text-lg font-semibold leading-tight">
+                      Kekayaan Hayati Lokal
+                    </h4>
+                    <span className="text-xs text-white/70 mt-1">Written By: ABC (17/07/2025)</span>
+                  </div>
                 </div>
+                <div className="relative rounded-xl overflow-hidden shadow-md group h-[31%] flex-1">
+                  <img
+                    src={enviart4}
+                    alt="Artikel Tambahan"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-3 flex flex-col justify-end">
+                    <h4 className="text-base sm:text-lg font-semibold leading-tight">
+                      Artikel Tambahan
+                    </h4>
+                    <span className="text-xs text-white/70 mt-1">Written By: ABC (17/07/2025)</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            </div>
-        </div>
-        )}
-
+          )}
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // ✅ Tambahkan ini
+import { useNavigate } from "react-router-dom";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import vid1 from "../assets/vid1.png";
 import vid2 from "../assets/background.png";
@@ -21,18 +21,17 @@ const sliderItems = [
 ];
 
 const topics = [
-  { title: "History", desc: "Legenda Dalem Tamblingan dan Pembentukan Catur Desa", bg: toy },
-  { title: "W A", desc: "Permainan dianggap warisan budaya adat Tamblingan", bg: toy },
-  { title: "Heritage", desc: "Desa Adat mewarisi nilai budaya sejak zaman leluhur dan tetap dijaga", bg: toy },
-  { title: "Law", desc: "Permainan dianggap warisan budaya adat Tamblingan", bg: toy },
+  { title: "Sejarah MADT", desc: "Legenda Dalem Tamblingan dan Pembentukan Catur Desa", bg: toy },
+  { title: "Menjala Ingatan...", desc: "Refleksi spiritual-ekologis masyarakat adat dalam menjaga hutan keramat", bg: toy },
+  { title: "Nyegara Gunung", desc: "Konsepsi konservasi spiritual dan ekologis masyarakat Tamblingan", bg: toy },
   { title: "TOY", desc: "Permainan dianggap warisan budaya adat Tamblingan", bg: toy },
-  { title: "Ayuk", desc: "Permainan dianggap warisan budaya adat Tamblingan", bg: toy },
+  { title: "Other", desc: "Permainan dianggap warisan budaya adat Tamblingan", bg: toy },
 ];
 
 export default function CultureContent() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [fade, setFade] = useState(true);
-  const navigate = useNavigate(); // ✅ Tambahkan ini
+  const navigate = useNavigate();
 
   const handleChange = (newIndex) => {
     setFade(false);
@@ -127,7 +126,12 @@ export default function CultureContent() {
           {topics.map((item, index) => (
             <div
               key={index}
-              onClick={() => item.title === "History" && navigate("/history")} // ✅ Navigasi hanya jika title "History"
+              onClick={() => {
+                if (item.title === "Sejarah MADT") navigate("/history");
+                else if (item.title === "Nyegara Gunung") navigate("/nyegara-gunung");
+                else if (item.title === "Menjala Ingatan...") navigate("/menjala");
+
+              }}
               className="relative w-48 md:w-56 h-32 md:h-56 rounded-xl overflow-hidden bg-no-repeat bg-center shrink-0 transform transition-transform duration-300 hover:scale-105 cursor-pointer"
               style={{
                 backgroundSize:

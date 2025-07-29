@@ -16,7 +16,7 @@ export default function History() {
 
       {/* Hero Section */}
       <div className="pt-28">
-        <div className="w-full px-4 md:px-20 py-10 bg-gradient-to-r from-[#625b39] via-[#988c44] to-[#d1bb48] text-white">
+        <div className="w-full px-4 md:px-20 py-10 bg-gradient-to-r from-[#44342F] to-[#AA5C46] text-white">
           <div className="max-w-5xl mx-auto space-y-3">
             <p className="text-sm text-white/80">
               <span className="underline">Topics</span> / Kebudayaan
@@ -112,7 +112,7 @@ export default function History() {
         </div>
 
         </div>
-
     </div>
   );
 }
+
