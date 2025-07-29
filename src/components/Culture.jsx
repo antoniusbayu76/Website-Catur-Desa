@@ -21,7 +21,7 @@ const sliderItems = [
 ];
 
 const topics = [
-  { title: "History", desc: "Legenda Dalem Tamblingan dan Pembentukan Catur Desa", bg: toy },
+  { title: "Sejarah MADT", desc: "Legenda Dalem Tamblingan dan Pembentukan Catur Desa", bg: toy },
   { title: "Menjala Ingatan...", desc: "Refleksi spiritual-ekologis masyarakat adat dalam menjaga hutan keramat", bg: toy },
   { title: "Nyegara Gunung", desc: "Konsepsi konservasi spiritual dan ekologis masyarakat Tamblingan", bg: toy },
   { title: "TOY", desc: "Permainan dianggap warisan budaya adat Tamblingan", bg: toy },
@@ -128,7 +128,7 @@ export default function CultureContent() {
             <div
               key={index}
               onClick={() => {
-                if (item.title === "History") navigate("/history");
+                if (item.title === "Sejarah MADT") navigate("/history");
                 else if (item.title === "Nyegara Gunung") navigate("/nyegara-gunung");
                 else if (item.title === "Menjala Ingatan...") navigate("/menjala");
 

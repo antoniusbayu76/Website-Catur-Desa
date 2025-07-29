@@ -14,7 +14,7 @@ export default function Secondsec() {
             Adat Dalem Tamblingan
           </h2>
           <p className="text-sm md:text-base leading-relaxed text-white/90">
-            Masyarakat Adat Dalem Tamblingan adalah komunitas tradisional yang
+            Masyarakat Adat Dalem Tamblingan (MADT) adalah komunitas tradisional yang
             mendiami wilayah Catur Desa Munduk, Gobleg, Gesing, dan Umajero di
             sekitar Danau Tamblingan, Buleleng. Mereka memiliki akar sejarah
             dari peradaban kuno Tamblingan dan dikenal teguh memegang{" "}

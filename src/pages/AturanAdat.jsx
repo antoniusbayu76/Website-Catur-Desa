@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { FaClock } from "react-icons/fa";
 import danau from "../assets/danau.png";
+import Navbar from "../components/Navbar";
 
 export default function AturanAdat() {
   useEffect(() => {
@@ -9,6 +10,7 @@ export default function AturanAdat() {
 
   return (
     <div className="relative bg-white text-black min-h-screen">
+      <Navbar />
       <div className="pt-28">
         <div className="w-full px-4 md:px-20 py-10 bg-gradient-to-r from-[#625b39] via-[#988c44] to-[#d1bb48] text-white">
           <div className="max-w-5xl mx-auto space-y-3">

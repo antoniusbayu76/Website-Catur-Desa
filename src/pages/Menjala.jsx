@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { FaClock } from "react-icons/fa";
 import headerImg from "../assets/danau.png";
+import Navbar from "../components/Navbar";
 
 export default function MenjalaIngatan() {
   useEffect(() => {
@@ -9,6 +10,7 @@ export default function MenjalaIngatan() {
 
   return (
     <div className="relative bg-white text-black min-h-screen">
+      <Navbar />
       <div className="pt-28">
         {/* Header */}
         <div className="w-full px-4 md:px-20 py-10 bg-gradient-to-r from-[#44342F] to-[#AA5C46] text-white">

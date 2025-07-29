@@ -1,7 +1,7 @@
 import React from "react";
 import { FaClock } from "react-icons/fa";
 import danau from "../assets/danau.png";
-/* import Navbar from "../components/Navbar"; */
+import Navbar from "../components/Navbar";
 import { useEffect } from "react";
 
 
@@ -12,7 +12,7 @@ export default function History() {
 
   return (
     <div className="relative bg-white text-black min-h-screen">
-      {/*<Navbar /> */}
+      <Navbar />
 
       {/* Hero Section */}
       <div className="pt-28">
