@@ -26,6 +26,7 @@ const topics = [
   { title: "Nyegara Gunung", desc: "Konsepsi konservasi spiritual dan ekologis masyarakat Tamblingan", bg: toy },
   { title: "TOY", desc: "Permainan dianggap warisan budaya adat Tamblingan", bg: toy },
   { title: "Other", desc: "Permainan dianggap warisan budaya adat Tamblingan", bg: toy },
+  { title: "Other2", desc: "Permainan dianggap warisan budaya adat Tamblingan", bg: toy },
 ];
 
 export default function CultureContent() {
