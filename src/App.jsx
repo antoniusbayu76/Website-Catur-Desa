@@ -13,6 +13,7 @@ import NyegaraGunung from "./pages/NyegaraGunung";
 import WilayahAdat from './pages/WilayahAdat';
 import MenjalaIngatan from "./pages/Menjala";
 import CultureContent from './components/Culture';
+import Gangsing from './pages/Gangsing';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/wilayah-adat" element={<WilayahAdat />} />
         <Route path="/nyegara-gunung" element={<NyegaraGunung />} />
         <Route path="/menjala" element={<MenjalaIngatan />} />
+        <Route path="/gangsing" element={<Gangsing />} />
         {/* ✅ Route tambahan */}
         <Route path="/culture" element={<CultureContent />} />
       </Routes>

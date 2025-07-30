@@ -22,10 +22,10 @@ const discoverItems = [
     path: "/menjala",
   },
   {
-    title: "Permainan Tradisional",
-    desc: "Warisan budaya permainan masyarakat Tamblingan",
+    title: "Permainan Gangsing",
+    desc: "Gangsing sebagai warisan budaya Masyarakat Adat Dalem Tamblingan",
     bg: toy,
-    path: "/toys",
+    path: "/gangsing",
   },
   {
     title: "Other",
