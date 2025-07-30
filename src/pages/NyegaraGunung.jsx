@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { FaClock } from "react-icons/fa";
 import bgImage from "../assets/danau.png";
 import Navbar from "../components/Navbar";
+import DiscoverCulture from "../components/DiscoverCulture";
+import Footer from "../components/Footer";
 
 export default function NyegaraGunung() {
   useEffect(() => {
@@ -11,7 +13,7 @@ export default function NyegaraGunung() {
    return (
     <div className="relative bg-white text-black min-h-screen">
       <Navbar />
-      <div className="pt-28">
+      <div className="pt-28 pb-15">
         {/* Header */}
         <div className="w-full px-4 md:px-20 py-10 bg-gradient-to-r from-[#44342F] to-[#AA5C46] text-white">
           <div className="max-w-5xl mx-auto space-y-3">
@@ -96,7 +98,8 @@ export default function NyegaraGunung() {
           <p className="indent-8">Menyadari bahwa sumber-sumber air seperti mata air dan Sungai yang mengalir di seluruh wilayah adat Dalem Tamblingan bukan hanya milik kami sendiri, melainkan juga milik dari seluruh wilayah yang dilalui oleh aliran Sungai itu, sehingga bagi kami masyarakat hulu, menjaga dan melindungi sumber-sumber air tersebut adalah sebuah keharusan.</p>
         </div>
       </div>
-      <div className="h-20" />
+      <DiscoverCulture />
+      <Footer />
     </div>
   );
 }
