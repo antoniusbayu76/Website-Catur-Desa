@@ -11,6 +11,16 @@ import AturanAdat from "./pages/AturanAdat"
 import NyegaraGunung from "./pages/NyegaraGunung"
 import WilayahAdat from './pages/WilayahAdat'
 import MenjalaIngatan from "./pages/Menjala";
+import CultureContent from './components/Culture';
+import Gangsing from './pages/Gangsing';
+import Alilitan from './pages/Alilitan';
+import Mertajati from './pages/Mertajati';
+import SDA from './pages/SDA';
+import Tempatsuci from './pages/TempatSuci';
+import Mataair from './pages/Mataair';
+import Tanamanobat from './pages/Tanamanobat';
+import Pemerintahan from './pages/Pemerintahan';
+import Fasilitas from './pages/Fasilitas';
 
 
 function App() {
@@ -27,6 +37,17 @@ function App() {
         <Route path="/wilayah-adat" element={<WilayahAdat />} />
         <Route path="/nyegara-gunung" element={<NyegaraGunung />} />
         <Route path="/menjala" element={<MenjalaIngatan />} />
+        <Route path="/gangsing" element={<Gangsing />} />
+        <Route path="/alilitan" element={<Alilitan />} />
+        <Route path="/mertajati" element={<Mertajati />} />
+        <Route path="/sda" element={<SDA />} />
+        <Route path="/tempatsuci" element={<Tempatsuci />} />
+        <Route path="/mataair" element={<Mataair />} />
+        <Route path="/tanamanobat" element={<Tanamanobat />} />
+        <Route path="/pemerintahan" element={<Pemerintahan />} />
+        <Route path="/fasilitas" element={<Fasilitas />} />
+        {/* ✅ Route tambahan */}
+        <Route path="/culture" element={<CultureContent />} />
       </Routes>
     </Router>
   )

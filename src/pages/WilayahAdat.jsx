@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { FaClock } from "react-icons/fa";
 import wilayahImg from "../assets/danau.png"; // ganti sesuai gambar peta atau danau jika ada
 import Navbar from "../components/Navbar";
+import Discover from "../components/DiscoverEnvi";
+import Footer from "../components/Footer";
 
 export default function WilayahAdat() {
   useEffect(() => {
@@ -96,10 +98,120 @@ export default function WilayahAdat() {
           <p className="indent-8">
             Saat ini di dalam kawasan Alas Mertajati terdapat lahan pribadi, tanah kebun enclave ber-Sertifikat Hak Milik (SHM) seluas 14,97 hektar (namun berdasarkan <a href="https://ksda-bali.go.id" target="_blank" rel="noopener noreferrer" className="text-blue-600 italic underline hover:text-blue-800">ksda-bali.go.id</a> luas lahan enclave tersebut adalah 8 hektar). Ada banyak versi terkait keberadaan lahan tersebut, namun tidak ada satu pun yang akurat walaupun sudah dirunut secara logis.
           </p>
+          
+          <h2 className="text-xl md:text-2xl font-bold">Wilayah Catur Desa</h2>
+          <p className="indent-8">
+            Kewilayahan Adat Dalem Tamblingan mencakup wilayah Catur Desa, yaitu Desa Gobleg, Desa Munduk, Desa Gesing, dan Desa Umejero di Kabupaten Buleleng. Secara administrasi kedinasan, desa-desa tersebut terdiri dari:
+
+          </p>
+          <ol className="list-decimal list-inside space-y-4 text-sm md:text-base leading-relaxed text-justify">
+                <li className="font-bold">
+                <span className="font-bold">Gobleg</span>
+                  <ol className="mx-10 list-disc">
+                    <li>
+                      <span className="font-normal">Banjar Dinas Tengah</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Banjar Dinas Jembong</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Banjar Dinas Unusan</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Banjar Dinas Asah</span>
+                    </li>
+                  </ol>
+                </li>
+                <li className="font-bold">
+                <span className="font-bold">Munduk</span>
+                <ol className="mx-10 list-disc">
+                    <li>
+                      <span className="font-normal">Banjar Dinas Bulakan</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Banjar Dinas Taman</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Banjar Dinas Beji</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Banjar Dinas Tamblingan</span>
+                    </li>
+                  </ol>
+                </li>
+                <li className="font-bold">
+                <span className="font-bold">Gesing</span>
+                <ol className="mx-10 list-disc">
+                    <li>
+                      <span className="font-normal">Banjar Dinas Gesing 1</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Banjar Dinas Gesing 2</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Banjar Dinas Gesing 3</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Banjar Dinas Gesing 4</span>
+                    </li>
+                  </ol>
+                </li>
+                <li className="font-bold">
+                <span className="font-bold">Umajero</span>
+                <ol className="mx-10 list-disc">
+                    <li>
+                      <span className="font-normal">Banjar Dinas Umajero</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Banjar Dinas Dauh Pangkung</span>
+                    </li>
+                  </ol>
+                </li>
+            </ol>
+
+          <h2 className="text-xl md:text-2xl font-bold">Asal-Usul Geologis dan Legenda</h2>
+          <p className="indent-8">
+            Pada masa purba, Beratan, Buyan, dan Tamblingan merupakan satu kesatuan, bagian dari sebuah gunung berdiameter sangat besar bernama Gunung Beratan Purba. Gunung tersebut meletus menjadi tiga kaldera (danau), yaitu Beratan, Buyan, dan Tamblingan. Hasil letusan Beratan Purba kemudian juga menciptakan jajaran pegunungan yang ada saat ini, yaitu Gunung Lesung, Gunung Sanghyang, Gunung Tapak, dan Gunung Batukaru. Ada sebuah legenda yang mengatakan, <i>"Meletus gunungnya, jadilah danau yang memberikan kamertaan"</i>. Dikisahkan, gunung yang ada ketika itu sangat tinggi, sampai <i>"bojoge nyujuh bulan"</i>. Para dewata merasa tidak senang melihat kera bisa menjangkau bulan, maka dipotonglah Gunung Beratan Purba menjadi Gunung Putung. Namun karena kera juga masih bisa menjangkau bulan, gunung dipotong sekali lagi, dan menjadi Gunung Lesung seperti saat ini.
+
+          </p>
+
+          <h2 className="text-xl md:text-2xl font-bold">Kondisi Topografi dan Luas Wilayah</h2>
+          <p className="indent-8">
+            Sebagai sebuah kawasan adat dengan luas wilayah kurang lebih 6.991 hektar, Adat Dalem Tamblingan di Catur Desa terletak pada ketinggian antara 390 meter dpal di Campuhan Mendaum, hingga 2.080 meter dpal di Gunung Sanghyang. Topografi sangat bervariasi, mulai dari landai (0 - 8%) hingga kemiringan sangat curam (25% - 45%).
+
+          </p>
+
+          <h2 className="text-xl md:text-2xl font-bold">Fungsi dan Pemanfaatan Lahan</h2>
+          <p className="indent-8">
+            Berdasarkan hasil Pemetaan Partisipatif dan data monografi desa Gobleg-Munduk-Gesing-Umejero, kewilayahan Adat Dalem Tamblingan di Catur Desa difungsikan dan terdiri dari:
+          </p>
+
+          <ol className="mx-5 list-disc">
+                    <li>
+                      <span className="font-normal">Hutan dan danau, dinamakan Alas Mertajati seluas 1.298 ha (19%)</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Perkebunan, sebagian besar berupa kebun cengkeh seluas 4.652 ha (66%)</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Persawahan, yaitu sawah basah seluas 231 ha (3%)</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Pekarangan, berupa kebun sayur dan bunga seluas 204 ha (3%)</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Permukiman/perkantoran, termasuk fasilitas umum seluas 340 ha (5%)</span>
+                    </li>
+                    <li>
+                      <span className="font-normal">Kuburan/lainnya, seluas 266 ha (4%)</span>
+                    </li>
+                  </ol>
         </div>
       </div>
 
       <div className="h-20" />
+      <Discover/>
+      <Footer/>
     </div>
   );
 }

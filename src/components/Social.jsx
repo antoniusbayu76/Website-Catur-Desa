@@ -15,8 +15,14 @@ export default function SocialContent() {
       link: "/aturan-adat", // ✅ tambahkan properti link
     },
     {
-      title: "Mengenal Dualitas Kepemimpinan di Tamblingan Bali",
+      title: "Sistem Pemerintahan Adat Dalem Tamblingan",
       image: card2,
+      link: "/pemerintahan",
+    },
+    {
+      title: "Fasilitas Umum dan Fasilitas Sosial",
+      image: card2,
+      link: "/fasilitas",
     },
   ];
 
@@ -100,10 +106,13 @@ export default function SocialContent() {
             {articles.map((item, idx) => (
               <div
                 key={idx}
-                className="w-[60%] min-w-[60%] md:h-[28rem] h-[24rem] rounded-2xl bg-no-repeat bg-center relative shrink-0"
-                onClick={() => item.link && navigate(item.link)} // ✅ tambahkan navigasi ke halaman
-                style={{ backgroundSize: window.innerWidth < 640 ? "150%" : "110%", backgroundImage: `url(${item.image})` }}
+                className="w-[60%] min-w-[60%] md:h-[28rem] h-[24rem] rounded-2xl bg-no-repeat bg-center relative shrink-0 group overflow-hidden"
+                onClick={() => item.link && navigate(item.link)}
               >
+                <div
+                  className="absolute inset-0 transition-transform duration-500 ease-in-out group-hover:scale-110"
+                  style={{ backgroundImage: `url(${item.image})`, backgroundSize: window.innerWidth < 640 ? "150%" : "110%", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}
+                />
                 <div className="absolute inset-0 bg-black/40 rounded-2xl" />
                 <div className="absolute bottom-0 p-4 z-10 text-white rounded-b-2xl">
                   <h3 className="text-base sm:text-lg font-semibold">
