@@ -15,8 +15,14 @@ export default function SocialContent() {
       link: "/aturan-adat", // ✅ tambahkan properti link
     },
     {
-      title: "Mengenal Dualitas Kepemimpinan di Tamblingan Bali",
+      title: "Sistem Pemerintahan Adat Dalem Tamblingan",
       image: card2,
+      link: "/pemerintahan",
+    },
+    {
+      title: "Fasilitas Umum dan Fasilitas Sosial",
+      image: card2,
+      link: "/fasilitas",
     },
   ];
 

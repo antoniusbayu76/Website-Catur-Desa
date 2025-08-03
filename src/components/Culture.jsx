@@ -24,8 +24,8 @@ const topics = [
   { title: "Sejarah MADT", desc: "Legenda Dalem Tamblingan dan Pembentukan Catur Desa", bg: toy },
   { title: "Menjala Ingatan...", desc: "Refleksi spiritual-ekologis masyarakat adat dalam menjaga hutan keramat", bg: toy },
   { title: "Nyegara Gunung", desc: "Konsepsi konservasi spiritual dan ekologis masyarakat Tamblingan", bg: toy },
+  { title: "Karya Alilitan", desc: "Rangkaian ritual oleh masyarakat Adat Dalem Tamblingan", bg: toy },
   { title: "Permainan Gangsing", desc: "Gangsing sebagai warisan budaya Masyarakat Adat Dalem Tamblingan", bg: toy },
-  { title: "Other", desc: "Permainan dianggap warisan budaya adat Tamblingan", bg: toy },
   { title: "Other2", desc: "Permainan dianggap warisan budaya adat Tamblingan", bg: toy },
 ];
 
@@ -131,6 +131,7 @@ export default function CultureContent() {
                 if (item.title === "Sejarah MADT") navigate("/history");
                 else if (item.title === "Nyegara Gunung") navigate("/nyegara-gunung");
                 else if (item.title === "Menjala Ingatan...") navigate("/menjala");
+                else if (item.title === "Karya Alilitan") navigate("/alilitan");
                 else if (item.title === "Permainan Gangsing") navigate("/gangsing");
 
               }}
