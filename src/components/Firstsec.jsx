@@ -109,7 +109,7 @@ export default function Firstsec({ onNavClick }) {
               Masyarakat Adat Dalem Tamblingan
             </p>
               <p className="text-xs sm:text-sm text-white/70 italic mt-1">
-              Gobleg &ndash; Munduk &ndash; Gesing &ndash; Umajero
+              Gobleg &ndash; Munduk &ndash; Gesing &ndash; Umejero
               </p>
           </div>
         </div>

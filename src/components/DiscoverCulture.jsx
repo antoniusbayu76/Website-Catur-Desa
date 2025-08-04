@@ -1,12 +1,17 @@
 import { useNavigate } from "react-router-dom";
 import toy from "../assets/toy.png";
+import history from "../assets/historybg.png";
+import menjala from "../assets/sawah.png";
+import ritual from "../assets/ritual.png";
+import permainan from "../assets/permainan.png";
+import melasti from "../assets/melasti.jpg";
 import React from "react";
 
 const discoverItems = [
   {
     title: "Sejarah MADT",
     desc: "Legenda Dalem Tamblingan dan Pembentukan Catur Desa",
-    bg: toy,
+    bg: history,
     path: "/history",
   },
   {
@@ -18,26 +23,32 @@ const discoverItems = [
   {
     title: "Menjala Ingatan...",
     desc: "Refleksi spiritual-ekologis masyarakat adat dalam menjaga hutan keramat",
-    bg: toy,
+    bg: menjala,
     path: "/menjala",
   },
   {
-    title: "Permainan Gangsing",
-    desc: "Gangsing sebagai warisan budaya Masyarakat Adat Dalem Tamblingan",
-    bg: toy,
-    path: "/gangsing",
+    title: "Adat dan Ritual",
+    desc: "Masyarakat Adat Dalem Tamblingan adalah penganut Piagem Gama Tirta yang memuliakan air",
+    bg: ritual,
+    path: "/adatritual",
   },
   {
-    title: "Other",
-    desc: "Warisan budaya permainan masyarakat Tamblingan",
-    bg: toy,
-    path: "/toys",
+    title: "Karya Alilitan",
+    desc: "Rangkaian ritual oleh masyarakat Adat Dalem Tamblingan",
+    bg: melasti,
+    path: "/alilitan",
   },
   {
-    title: "Other2",
-    desc: "Warisan budaya permainan masyarakat Tamblingan",
+    title: "Permainan Tradisional",
+    desc: "Beberapa permainan tradisional yang membutuhkan keterampilan dan melatih motorik anak",
+    bg: permainan,
+    path: "/permainan",
+  },
+  {
+    title: "Kesenian dan Hiburan",
+    desc: "Krama Adat Dalem Tamblingan juga memiliki kesenian sakral ",
     bg: toy,
-    path: "/toys",
+    path: "/kesenian",
   },
 ];
 

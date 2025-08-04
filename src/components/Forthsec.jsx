@@ -58,11 +58,7 @@ export default function Fourthsec() {
         ))}
       </div>
 
-      {/* Footer */}
-      <footer className="relative z-10 mt-12 text-center text-xs text-black/80 px-2">
-        Developed by <br />
-        <span className="font-medium tracking-wide">KKN MEKAR BANJAR UGM 2025</span>
-      </footer>
+    
     </section>
   );
 }

@@ -15,6 +15,11 @@ const discoverItems = [
     path: "/pemerintahan",
   },
   {
+    title: "Simbol Penyatuan Catur Desa",
+    bg: card1,
+    path: "/penyatuan",
+  },
+  {
     title: "Fasilitas Umum dan Fasilitas Sosial",
     bg: card2,
     path: "/fasilitas",

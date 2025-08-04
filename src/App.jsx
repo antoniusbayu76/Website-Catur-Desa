@@ -21,6 +21,10 @@ import Mataair from './pages/Mataair';
 import Tanamanobat from './pages/Tanamanobat';
 import Pemerintahan from './pages/Pemerintahan';
 import Fasilitas from './pages/Fasilitas';
+import Penyatuan from './pages/Penyatuan';
+import Adatritual from './pages/Adatritual';
+import Permainan from './pages/Permainan';
+import Kesenian from './pages/Kesenian';
 
 
 function App() {
@@ -37,6 +41,7 @@ function App() {
         <Route path="/wilayah-adat" element={<WilayahAdat />} />
         <Route path="/nyegara-gunung" element={<NyegaraGunung />} />
         <Route path="/menjala" element={<MenjalaIngatan />} />
+        <Route path="/permainan" element={<Permainan />} />
         <Route path="/gangsing" element={<Gangsing />} />
         <Route path="/alilitan" element={<Alilitan />} />
         <Route path="/mertajati" element={<Mertajati />} />
@@ -46,6 +51,9 @@ function App() {
         <Route path="/tanamanobat" element={<Tanamanobat />} />
         <Route path="/pemerintahan" element={<Pemerintahan />} />
         <Route path="/fasilitas" element={<Fasilitas />} />
+        <Route path="/penyatuan" element={<Penyatuan />} />
+        <Route path="/adatritual" element={<Adatritual />} />
+        <Route path="/kesenian" element={<Kesenian />} />
         {/* ✅ Route tambahan */}
         <Route path="/culture" element={<CultureContent />} />
       </Routes>

@@ -4,6 +4,7 @@ import Firstsec from "../components/Firstsec";
 import Secondsec from "../components/Secondsec";
 import Thirdsec from "../components/Thirdsec";
 import Fourthsec from "../components/Forthsec";
+import Sponsor from "../components/Sponsor";
 
 export default function Home() {
   const firstRef = useRef(null);
@@ -62,6 +63,9 @@ export default function Home() {
       <Thirdsec ref={thirdRef} />
       <div ref={fourthRef}>
         <Fourthsec />
+      </div>
+      <div >
+        <Sponsor />
       </div>
     </div>
   );

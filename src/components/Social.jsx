@@ -20,6 +20,11 @@ export default function SocialContent() {
       link: "/pemerintahan",
     },
     {
+      title: "Simbol Penyatuan Catur Desa",
+      image: card2,
+      link: "/penyatuan",
+    },
+    {
       title: "Fasilitas Umum dan Fasilitas Sosial",
       image: card2,
       link: "/fasilitas",

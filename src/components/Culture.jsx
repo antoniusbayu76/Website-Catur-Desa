@@ -4,6 +4,11 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import vid1 from "../assets/vid1.png";
 import vid2 from "../assets/background.png";
 import toy from "../assets/toy.png";
+import menjala from "../assets/sawah.png";
+import ritual from "../assets/ritual.png";
+import permainan from "../assets/permainan.png";
+import melasti from "../assets/melasti.jpg";
+import history from "../assets/historybg.png";
 
 const sliderItems = [
   {
@@ -21,12 +26,13 @@ const sliderItems = [
 ];
 
 const topics = [
-  { title: "Sejarah MADT", desc: "Legenda Dalem Tamblingan dan Pembentukan Catur Desa", bg: toy },
-  { title: "Menjala Ingatan...", desc: "Refleksi spiritual-ekologis masyarakat adat dalam menjaga hutan keramat", bg: toy },
+  { title: "Sejarah MADT", desc: "Legenda Dalem Tamblingan dan Pembentukan Catur Desa", bg: history },
+  { title: "Menjala Ingatan...", desc: "Refleksi spiritual-ekologis masyarakat adat dalam menjaga hutan keramat", bg: menjala },
   { title: "Nyegara Gunung", desc: "Konsepsi konservasi spiritual dan ekologis masyarakat Tamblingan", bg: toy },
-  { title: "Karya Alilitan", desc: "Rangkaian ritual oleh masyarakat Adat Dalem Tamblingan", bg: toy },
-  { title: "Permainan Gangsing", desc: "Gangsing sebagai warisan budaya Masyarakat Adat Dalem Tamblingan", bg: toy },
-  { title: "Other2", desc: "Permainan dianggap warisan budaya adat Tamblingan", bg: toy },
+  { title: "Adat dan Ritual", desc: "Masyarakat Adat Dalem Tamblingan adalah penganut Piagem Gama Tirta yang memuliakan air", bg: ritual },
+  { title: "Karya Alilitan", desc: "Rangkaian ritual oleh masyarakat Adat Dalem Tamblingan", bg: melasti },
+  { title: "Permainan Tradisional", desc: "Beberapa permainan tradisional yang membutuhkan keterampilan dan melatih motorik anak", bg: permainan },
+  { title: "Kesenian dan Hiburan", desc: "Krama Adat Dalem Tamblingan juga memiliki kesenian sakral ", bg: toy },
 ];
 
 export default function CultureContent() {
@@ -131,8 +137,10 @@ export default function CultureContent() {
                 if (item.title === "Sejarah MADT") navigate("/history");
                 else if (item.title === "Nyegara Gunung") navigate("/nyegara-gunung");
                 else if (item.title === "Menjala Ingatan...") navigate("/menjala");
+                else if (item.title === "Adat dan Ritual") navigate("/adatritual");
                 else if (item.title === "Karya Alilitan") navigate("/alilitan");
-                else if (item.title === "Permainan Gangsing") navigate("/gangsing");
+                else if (item.title === "Permainan Tradisional") navigate("/permainan");
+                else if (item.title === "Kesenian dan Hiburan") navigate("/kesenian");
 
               }}
               className="relative w-48 md:w-56 h-32 md:h-56 rounded-xl overflow-hidden bg-no-repeat bg-center shrink-0 transform transition-transform duration-300 hover:scale-105 cursor-pointer"

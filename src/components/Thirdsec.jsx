@@ -3,6 +3,7 @@ import { FaLeaf, FaUsers, FaImage, FaGlobe, FaGlobeAsia } from "react-icons/fa";
 import { GiTempleDoor } from "react-icons/gi";
 import CultureContent from "../components/Culture";
 import SocialContent from "../components/Social";
+import Glimpse from "../components/Glimpse";
 import EnvironmentContent from "../components/Environment";
 
 const menu = [
@@ -46,7 +47,7 @@ const Thirdsec = forwardRef((props, ref) => {
       case "social":
         return <SocialContent />;
       case "glimpse":
-        return <div>📸 Galeri / Dokumentasi MADT</div>;
+        return <Glimpse />;
       default:
         return null;
     }
