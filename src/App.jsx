@@ -25,6 +25,9 @@ import Penyatuan from './pages/Penyatuan';
 import Adatritual from './pages/Adatritual';
 import Permainan from './pages/Permainan';
 import Kesenian from './pages/Kesenian';
+import Posyandu from './pages/PosyanduMunduk';
+import Pujawali from './pages/Pujawali';
+import Pariwisata from './pages/Pariwisata';
 
 
 function App() {
@@ -54,6 +57,9 @@ function App() {
         <Route path="/penyatuan" element={<Penyatuan />} />
         <Route path="/adatritual" element={<Adatritual />} />
         <Route path="/kesenian" element={<Kesenian />} />
+        <Route path="/posyandu-munduk" element={<Posyandu />} />
+        <Route path="/pujawali" element={<Pujawali />} />
+        <Route path="/pariwisata" element={<Pariwisata />} />
         {/* ✅ Route tambahan */}
         <Route path="/culture" element={<CultureContent />} />
       </Routes>

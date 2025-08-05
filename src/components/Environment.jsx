@@ -1,23 +1,20 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import background from "../assets/envibg.png";
-import petadummy from "../assets/petadummy.png";
+//import petaADT from "../assets/Peta ADT bintang.png";
+import petaInventarisasi from "../assets/PetaInventarisasiAlasMertejati.jpg";
+import petaMataAir from "../assets/PetaMataAirdanAirTerjun.jpg";
+import petaAlasMertajati from "../assets/Peta Alas Mertajati.jpg";
 import enviart1 from "../assets/enviart1.png";
 import enviart2 from "../assets/enviart2.png";
 import enviart3 from "../assets/enviart3.png";
 import enviart4 from "../assets/enviart4.png";
 
 const mapImages = {
-  "Peta Tutupan Lahan": petadummy,
-  "Peta Kelerengan": petadummy,
-  "Peta daerah aliran sungai": petadummy,
-  "Peta Sumber mata air": petadummy,
-  "Peta tingkat bahaya erosi": petadummy,
-  "Map pack bahaya erosi": petadummy,
-  "Peta Alas Mertajati": petadummy,
-  "Peta pola ruang": petadummy,
-  "Peta Infra Sosial Budaya": petadummy,
-  "Peta Jasa Ekosistem": petadummy,
+  "Peta Inventarisasi Alas Mertajati": petaInventarisasi,
+  "Peta Mata Air dan Air Terjun": petaMataAir,
+  "Peta Adat Dalem Tamblingan": petaMataAir,
+  "Peta Alas Mertajati": petaAlasMertajati,
 };
 
 const mapOptions = Object.keys(mapImages);
@@ -64,7 +61,7 @@ export default function Environment() {
                 activeTab === "peta" ? "text-black" : "text-white/80"
               }`}
             >
-              🗺️ <span>Peta</span>
+              🗺 <span>Peta</span>
             </button>
             <button
               onClick={() => handleTabSwitch("artikel")}

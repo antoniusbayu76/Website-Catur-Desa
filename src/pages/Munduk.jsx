@@ -5,10 +5,9 @@ import gesing from "../assets/gesing.png";
 import umajero from "../assets/umajero.png";
 import thumbnail1 from "../assets/PosyanduMunduk.jpg";
 import thumbnail2 from "../assets/Purnama.JPG";
-import thumbnail3 from "../assets/danau.png";
-import thumbnail4 from "../assets/danau.png";
 import thumbnailbkup from "../assets/danau.png";
 import petaMunduk from "../assets/Munduk 1.png"; 
+import Navbar2 from "../components/NavbarDesa.jsx";
 
 const allDesa = [
   { name: "Munduk", image: munduk, link: "/munduk" },
@@ -54,6 +53,7 @@ export default function Munduk() {
 
   return (
     <div className="bg-[#834D3D] text-white font-sans overflow-x-hidden">
+      <Navbar2 />
       {/* HERO */}
       <section className="relative w-full h-[80vh] overflow-hidden">
         <div
@@ -87,10 +87,11 @@ export default function Munduk() {
             boxShadow: "inset 0 0 40px rgba(255, 233, 155, 0.2)",
           }}
         >
-          <h2 className="text-base sm:text-lg font-semibold leading-snug">
-            Bagan Highlight Atau Ringkasan Dari Bagian Paling Penting Atau Menarik Dari Suatu Hal Yang Ada Di <br />
-            <span className="font-bold">Desa Munduk</span> Seperti Fun Fact Ataupun Kedudukan
+          <h2 className="text-2xl sm:text-3xl font-semibold leading-snug text-center">
+            <span className="font-bold">Munduk</span>: Tanah Perantara, <br className="hidden sm:block" />
+              Warisan Leluhur yang Menyatukan
           </h2>
+
         </div>
 
         <div className="mt-6 rounded-xl overflow-hidden shadow-lg max-w-2xl mx-auto">
@@ -235,7 +236,7 @@ export default function Munduk() {
           <div className="flex-grow border-t border-white/70 max-w-[300px]" />
         </div>
 
-        <div className="flex justify-center gap-10 flex-wrap">
+        <div className="flex justify-center gap-30 flex-wrap">
           {articleThumbnails.map((item, idx) => (
             <div
               key={idx}

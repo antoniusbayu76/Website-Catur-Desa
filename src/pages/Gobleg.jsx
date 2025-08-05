@@ -7,7 +7,9 @@ import thumbnail1 from "../assets/danau.png";
 import thumbnail2 from "../assets/danau.png";
 import thumbnail3 from "../assets/danau.png";
 import thumbnail4 from "../assets/danau.png";
-import petaGobleg from "../assets/Gobleg 2.png"; 
+import petaGobleg from "../assets/Gobleg 2.png";
+import Navbar2 from "../components/NavbarDesa.jsx";
+
 
 
 const allDesa = [
@@ -52,6 +54,7 @@ export default function Gobleg() {
 
   return (
     <div className="bg-[#834D3D] text-white font-sans overflow-x-hidden">
+      <Navbar2 />
       {/* HERO */}
       <section className="relative w-full h-[80vh] overflow-hidden">
         <div
@@ -85,9 +88,10 @@ export default function Gobleg() {
             boxShadow: "inset 0 0 40px rgba(255, 233, 155, 0.2)",
           }}
         >
-          <h2 className="text-base sm:text-lg font-semibold leading-snug">
-            Bagan Highlight Atau Ringkasan Dari Bagian Paling Penting Atau Menarik Dari Suatu Hal Yang Ada Di <br />
-            <span className="font-bold">Desa Gobleg</span> Seperti Fun Fact Ataupun Kedudukan
+          <h2 className="text-base sm:text-2xl font-semibold leading-relaxed text-center">
+              Menelusuri <span className="font-bold text-white">Desa Gobleg</span>, Jejak Tertua dalam 
+            <br className="hidden sm:block" />
+              Warisan Leluhur <span className="italic">Catur Desa</span> Masyarakat Adat Dalem Tamblingan
           </h2>
         </div>
 

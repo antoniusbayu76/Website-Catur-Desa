@@ -7,7 +7,9 @@ import thumbnail1 from "../assets/danau.png";
 import thumbnail2 from "../assets/danau.png";
 import thumbnail3 from "../assets/danau.png";
 import thumbnail4 from "../assets/danau.png";
-import petaGesing from "../assets/Gesing 1.png"; 
+import petaGesing from "../assets/Gesing 1.png";
+import Navbar2 from "../components/NavbarDesa.jsx";
+
 
 
 const allDesa = [
@@ -52,6 +54,7 @@ export default function Gesing() {
 
   return (
     <div className="bg-[#834D3D] text-white font-sans overflow-x-hidden">
+      <Navbar2 />
       {/* HERO SECTION with Gradient Transition */}
       <section className="relative w-full h-[80vh] overflow-hidden">
         <div

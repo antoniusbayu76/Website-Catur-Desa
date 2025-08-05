@@ -15,19 +15,19 @@ const discoverItems = [
   {
     title: "Alas Mertajati",
     desc: "Kawasan hutan yang membentang dari utara ke selatan di bagian timur wilayah Adat Dalem Tamblingan.",
-    bg: enviart2,
+    bg: enviart1,
     path: "/mertajati",
   },
   {
     title: "Sumber Daya Alam",
     desc: "Sumber daya alam di wilayah Adat Dalem Tamblingan.",
-    bg: enviart3,
+    bg: enviart1,
     path: "/sda",
   },
   {
     title: "Tempat SUci",
     desc: "Tempat suci Adat Dalem Tamblingan di Catur Desa tersebar dalam tiga kawasan utama",
-    bg: enviart4,
+    bg: enviart1,
     path: "/tempatsuci",
   },
   {
@@ -39,7 +39,7 @@ const discoverItems = [
   {
     title: "Telusur Tanaman Obat Alas Mertajati",
     desc: "Keberagaman tanaman Obat menjadi salah satu kekayaan alam yang patut diperhatikan",
-    bg: enviart2,
+    bg: enviart1,
     path: "/tanamanobat",
   },
 ];

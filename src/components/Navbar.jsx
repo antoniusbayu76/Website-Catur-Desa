@@ -13,7 +13,7 @@ export default function Navbar() {
   };
 
   const handleTourismLink = () => {
-    window.open("https://www.dummywebsite.com", "_blank");
+    navigate("/pariwisata");
   };
 
   return (

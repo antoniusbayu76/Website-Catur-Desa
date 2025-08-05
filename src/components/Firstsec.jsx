@@ -4,10 +4,14 @@ import homelogo from "../assets/Homelogo.png";
 import tourism from "../assets/Tourisminfo.png";
 import { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
+
 
 export default function Firstsec({ onNavClick }) {
   const menuRef = useRef();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const navigate = useNavigate();
 
   const scrollTo = (key) => {
     const offset = window.innerWidth < 768 ? 100 : 0;
@@ -18,7 +22,7 @@ export default function Firstsec({ onNavClick }) {
   };
 
   const handleTourismLink = () => {
-    window.open("https://www.dummywebsite.com", "_blank");
+    navigate("/pariwisata"); 
   };
 
   return (
@@ -109,7 +113,7 @@ export default function Firstsec({ onNavClick }) {
               Masyarakat Adat Dalem Tamblingan
             </p>
               <p className="text-xs sm:text-sm text-white/70 italic mt-1">
-              Gobleg &ndash; Munduk &ndash; Gesing &ndash; Umejero
+              Gobleg &ndash; Munduk &ndash; Gesing &ndash; Umajero
               </p>
           </div>
         </div>
