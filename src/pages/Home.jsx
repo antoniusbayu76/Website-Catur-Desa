@@ -64,9 +64,9 @@ export default function Home() {
       <div ref={fourthRef}>
         <Fourthsec />
       </div>
-      {/* <div >
+      <div >
         <Sponsor />
-      </div> */}
+      </div>
     </div>
   );
 }
