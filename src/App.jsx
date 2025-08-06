@@ -44,7 +44,6 @@ function App() {
         <Route path="/wilayah-adat" element={<WilayahAdat />} />
         <Route path="/nyegara-gunung" element={<NyegaraGunung />} />
         <Route path="/menjala" element={<MenjalaIngatan />} />
-        <Route path="/permainan" element={<Permainan />} />
         <Route path="/gangsing" element={<Gangsing />} />
         <Route path="/alilitan" element={<Alilitan />} />
         <Route path="/mertajati" element={<Mertajati />} />
@@ -56,6 +55,7 @@ function App() {
         <Route path="/fasilitas" element={<Fasilitas />} />
         <Route path="/penyatuan" element={<Penyatuan />} />
         <Route path="/adatritual" element={<Adatritual />} />
+        <Route path="/permainan" element={<Permainan />} />
         <Route path="/kesenian" element={<Kesenian />} />
         <Route path="/posyandu-munduk" element={<Posyandu />} />
         <Route path="/pujawali" element={<Pujawali />} />

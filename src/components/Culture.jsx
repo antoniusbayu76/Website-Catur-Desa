@@ -15,7 +15,7 @@ const sliderItems = [
     image: vid1,
     title: "The Legend of Tamblingan",
     desc: "Sebuah kisah tentang persatuan alam, leluhur, dan manusia.",
-    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    url: "https://www.youtube.com/watch?v=xNOvLLW8-Wc",
   },
   {
     image: vid2,

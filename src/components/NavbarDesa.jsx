@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import homelogo from "../assets/Homelogo2.png";
-import tourism from "../assets/Tourisminfo2.png";
+import homelogo from "../assets/HomeLogo.png";
+import tourism from "../assets/Tourisminfo.png";
 
 export default function NavbarDesa() {
   const [sidebarOpen, setSidebarOpen] = useState(false);

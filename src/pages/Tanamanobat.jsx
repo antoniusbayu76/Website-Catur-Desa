@@ -26,7 +26,7 @@ export default function Tanamanobat() {
               Telusur Tanaman Obat Alas Mertajati
             </h1>
             <div className="text-sm text-white/90 flex flex-wrap items-center gap-4 mt-2">
-              <span>By Laksmi Emerald Azzahra - KKN PPM UGM Mekar Banjar 2025</span>
+              <span>By KKN Mekar Banjar </span>
             </div>
             <div className="text-sm text-white/90 flex flex-wrap items-center gap-4 mt-2">
               <span className="flex items-center gap-1">

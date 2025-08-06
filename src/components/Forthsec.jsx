@@ -9,7 +9,7 @@ const desaList = [
   { name: "Gobleg", image: gobleg, link: "/gobleg" },
   { name: "Munduk", image: munduk, link: "/munduk" },
   { name: "Gesing", image: gesing, link: "/gesing" },
-  { name: "Umajero", image: umajero, link: "/umajero" },
+  { name: "Umejero", image: umajero, link: "/umajero" },
 ];
 
 export default function Fourthsec() {

@@ -25,7 +25,7 @@ const discoverItems = [
     path: "/sda",
   },
   {
-    title: "Tempat SUci",
+    title: "Tempat Suci",
     desc: "Tempat suci Adat Dalem Tamblingan di Catur Desa tersebar dalam tiga kawasan utama",
     bg: enviart1,
     path: "/tempatsuci",

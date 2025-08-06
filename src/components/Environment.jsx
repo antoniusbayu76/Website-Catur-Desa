@@ -103,7 +103,7 @@ export default function Environment() {
               <div className="bg-white rounded-xl overflow-hidden border border-gray-300 shadow-lg transition duration-300">
                 <div className="bg-[#2e2e2e] text-white px-4 py-2 flex justify-between text-xs sm:text-sm font-medium">
                   <span>{selectedMap}</span>
-                  <span>Last Update: --/--/----</span>
+                  <span>Last Update: 05/08/2025</span>
                 </div>
                 <img
                   src={mapImages[selectedMap]}
@@ -133,7 +133,7 @@ export default function Environment() {
                   <p className="text-sm sm:text-base mb-2 text-white/90">
                     Penelusuran sejarah, batas spasial, dan fungsi wilayah Adat Dalem Tamblingan sejak kuna hingga sekarang.
                   </p>
-                  <span className="text-xs sm:text-sm text-white/70">Written By: KKN Mekar Banjar (27/07/2025)</span>
+                  <span className="text-xs sm:text-sm text-white/70">Written By: KKN Mekar Banjar (26/07/2025)</span>
                 </div>
               </div>
 
@@ -153,7 +153,7 @@ export default function Environment() {
                   <p className="text-sm sm:text-base mb-2 text-white/90">
                     Kawasan hutan yang membentang dari utara ke selatan di bagian timur wilayah Adat Dalem Tamblingan
                   </p>
-                  <span className="text-xs text-white/70 mt-1">Written By: ABC (17/07/2025)</span>
+                  <span className="text-xs text-white/70 mt-1">Written By: KKN Mekar Banjar (26/07/2025)</span>
                 </div>
               </div>
 
@@ -174,7 +174,7 @@ export default function Environment() {
                     Sumber daya alam di wilayah Adat Dalem Tamblingan
                   </p>
                   
-                  <span className="text-xs text-white/70 mt-1">Written By: ABC (17/07/2025)</span>
+                  <span className="text-xs text-white/70 mt-1">Written By: KKN Mekar Banjar (26/07/2025)</span>
                 </div>
               </div>
 
@@ -194,7 +194,7 @@ export default function Environment() {
                   <p className="text-sm sm:text-base mb-2 text-white/90">
                     Tempat suci Adat Dalem Tamblingan di Catur Desa tersebar dalam tiga kawasan utama
                   </p>
-                  <span className="text-xs text-white/70 mt-1">Written By: ABC (17/07/2025)</span>
+                  <span className="text-xs text-white/70 mt-1">Written By: KKN Mekar Banjar (26/07/2025)</span>
                 </div>
               </div>
 
@@ -214,7 +214,7 @@ export default function Environment() {
                   <p className="text-sm sm:text-base mb-2 text-white/90">
                     Selain Danau Tamblingan, kawasan Adat Dalem Tamblingan (ADT) memiliki banyak sumber air dan air terjun
                   </p>
-                  <span className="text-xs text-white/70 mt-1">Written By: XYZ (30/07/2025)</span>
+                  <span className="text-xs text-white/70 mt-1">Written By: KKN Mekar Banjar (26/07/2025)</span>
                 </div>
               </div>
 
@@ -234,7 +234,7 @@ export default function Environment() {
                   <p className="text-sm sm:text-base mb-2 text-white/90">
                     Keberagaman tanaman obat menjadi salah satu kekayaan alam yang patut diperhatikan
                   </p>
-                  <span className="text-xs text-white/70 mt-1">Written By: XYZ (01/08/2025)</span>
+                  <span className="text-xs text-white/70 mt-1">Written By: KKN Mekar Banjar (30/07/2025)</span>
                 </div>
               </div>
             </div>

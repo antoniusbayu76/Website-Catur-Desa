@@ -61,8 +61,6 @@ export default function Kesenian() {
                 <li><span className="font-normal">Kekawin</span></li>
                 <li><span className="font-normal">Kidung</span></li>
               </ol>
- 
-        
           </ol>
           </p>
 
